@@ -42,7 +42,7 @@ class _AccountValueState extends State<AccountValue> {
     return  GetBuilder<ControllerHomePage>(
       init:ControllerHomePage(),
       builder: (controllerHomePage) {
-        return Text(controllerHomePage.saldo, style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 21));
+        return Text(controllerHomePage.valueVisibility?controllerHomePage.saldo:'****', style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 21));
       }
     );
   }

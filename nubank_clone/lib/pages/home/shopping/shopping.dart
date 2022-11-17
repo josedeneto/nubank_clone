@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nubank_clone/core/theme/app_colors.dart';
-import 'package:nubank_clone/core/theme/app_typography.dart';
+
 
 class ShoppingView extends StatelessWidget {
   const ShoppingView({ Key? key }) : super(key: key);

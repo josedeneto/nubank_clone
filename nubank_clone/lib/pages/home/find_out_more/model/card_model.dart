@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nubank_clone/core/theme/app_colors.dart';
 import 'package:nubank_clone/core/theme/app_typography.dart';
 
+// ignore: must_be_immutable
 class CardFindOutModel extends StatelessWidget {
   String imagem;
   String title;

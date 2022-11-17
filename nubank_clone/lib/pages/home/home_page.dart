@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:nubank_clone/core/theme/app_colors.dart';
-import 'package:nubank_clone/pages/creditsCard/credit_card.dart';
-import 'package:nubank_clone/pages/home/home_component/header_component.dart';
 
-import '../account/account.dart';
-import '../actions/menu_items.dart';
-import '../creditsCard/my_credits_cards.dart';
-import '../find_out_more/find_out_more.dart';
-import '../investments/investments.dart';
-import '../notifications_page/notifications.dart';
-import '../security_life/security_life.dart';
-import '../shopping/shopping.dart';
-import 'home_component/appBar_component.dart';
+
+import 'account/account.dart';
+import 'actions/menu_items.dart';
+import 'creditsCard/credit_card.dart';
+import 'creditsCard/my_credits_cards.dart';
+import 'find_out_more/find_out_more.dart';
+import 'investments/investments.dart';
+import 'model/appbar.dart';
+import 'model/header.dart';
+import 'notifications_page/notifications.dart';
+import 'security_life/security_life.dart';
+import 'shopping/shopping.dart';
 
 
 class HomePage extends StatefulWidget {

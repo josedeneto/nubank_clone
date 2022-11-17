@@ -52,12 +52,12 @@ class _HeaderComponentState extends State<HeaderComponent> {
   }
 
   options() {
-    return Row(
-      children: [
-        GetBuilder<ControllerHomePage>(
-            init: ControllerHomePage(),
-            builder: (controllerHomePage) {
-              return IconButton(
+    return GetBuilder<ControllerHomePage>(
+        init: ControllerHomePage(),
+        builder: (controllerHomePage) {
+          return Row(
+            children: [
+              IconButton(
                 onPressed: () => controllerHomePage.showValue(),
                 icon: Icon(
                   controllerHomePage.valueVisibility
@@ -65,30 +65,31 @@ class _HeaderComponentState extends State<HeaderComponent> {
                       : Icons.visibility_off_outlined,
                   color: AppColors.white,
                 ),
-              );
-            }),
-        IconButton(
-          onPressed: () {},
-          icon: const Icon(
-            Icons.help_outline_outlined,
-            color: AppColors.white,
-          ),
-        ),
-        IconButton(
-          onPressed: () {},
-          icon:
-              const Icon(Icons.person_add_alt_outlined, color: AppColors.white),
-        )
-      ],
-    );
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.help_outline_outlined,
+                  color: AppColors.white,
+                ),
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: const Icon(Icons.person_add_alt_outlined,
+                    color: AppColors.white),
+              )
+            ],
+          );
+        });
   }
 
   welcome() {
     return Container(
       margin: const EdgeInsets.only(left: 20, bottom: 20),
-      child:  const Text(
+      child: const Text(
         'Olá, José',
-        style:TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize:16),
+        style: TextStyle(
+            color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16),
       ),
     );
   }
