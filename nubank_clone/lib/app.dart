@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nubank_clone/core/theme/app_theme.dart';
 
-import 'pages/home/home_page.dart';
+import 'src/pages/home/home_page.dart';
 
 class App extends StatelessWidget {
   const App({Key? key}) : super(key: key);
@@ -14,9 +14,7 @@ class App extends StatelessWidget {
       title: 'Clone Nubank',
       theme: AppTheme.theme,
       initialRoute: '/',
-      routes:{
-        '/':(_) => const HomePage()
-      } ,
+      routes: {'/': (_) => const HomePage()},
     );
   }
 }

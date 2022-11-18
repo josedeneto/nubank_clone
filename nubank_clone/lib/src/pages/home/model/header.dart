@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/src/simple/get_state.dart';
-import 'package:nubank_clone/controllers/controller_home_page.dart';
 import 'package:nubank_clone/core/theme/app_colors.dart';
+
+import '../../../controllers/controller_home_page.dart';
 
 class HeaderComponent extends StatefulWidget {
   const HeaderComponent({Key? key}) : super(key: key);
